@@ -2,6 +2,18 @@ package com.race.restModel;
 
 import java.util.Date;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+
+/**
+ * @author praterai
+ *
+ */
+@Data
+@NoArgsConstructor
+@ToString
 public class UpadteSeatStatus {
 	
 	private String emailId;
@@ -18,53 +30,4 @@ public class UpadteSeatStatus {
 	
 	
 	
-
-	
-	public String getLoginMail() {
-		return loginMail;
-	}
-
-	public void setLoginMail(String loginMail) {
-		this.loginMail = loginMail;
-	}
-
-	public Date getStartDate() {
-		return startDate;
-	}
-
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
-	}
-
-	public Date getReturnDate() {
-		return returnDate;
-	}
-
-	public void setReturnDate(Date returnDate) {
-		this.returnDate = returnDate;
-	}
-
-	public String getEmailId() {
-		return emailId;
-	}
-
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
-
-	public String getCubicalStatus() {
-		return cubicalStatus;
-	}
-
-	public void setCubicalStatus(String cubicalStatus) {
-		this.cubicalStatus = cubicalStatus;
-	}
-
-	public String getCubicalNumber() {
-		return cubicalNumber;
-	}
-
-	public void setCubicalNumber(String cubicalNumber) {
-		this.cubicalNumber = cubicalNumber;
-	}
 }

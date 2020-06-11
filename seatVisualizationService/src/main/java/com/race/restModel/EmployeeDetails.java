@@ -2,6 +2,18 @@ package com.race.restModel;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+
+/**
+ * @author praterai
+ *
+ */
+@Data
+@NoArgsConstructor
+@ToString
 public class EmployeeDetails {
 	
 	@JsonProperty("emp_id")
@@ -12,34 +24,5 @@ public class EmployeeDetails {
 
 	@JsonProperty("employeeDetails")
 	private CubicaLDetails cubicalDetails;
-
-	@Override
-	public String toString() {
-		return "EmployeeDetails [empId=" + empId + ", EmpName=" + EmpName + ", cubicalDetails=" + cubicalDetails + "]";
-	}
-
-	public Long getEmpId() {
-		return empId;
-	}
-
-	public void setEmpId(Long empId) {
-		this.empId = empId;
-	}
-
-	public String getEmpName() {
-		return EmpName;
-	}
-
-	public void setEmpName(String empName) {
-		EmpName = empName;
-	}
-
-	public CubicaLDetails getCubicalDetails() {
-		return cubicalDetails;
-	}
-
-	public void setCubicalDetails(CubicaLDetails cubicalDetails) {
-		this.cubicalDetails = cubicalDetails;
-	}
 
 }
